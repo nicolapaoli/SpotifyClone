@@ -1,0 +1,111 @@
+.nav-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    color: #CCC;
+}
+.spotify-logo {
+    height: 45px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/512px-Spotify_logo_with_text.svg.png');
+    background-size: contain;
+    background-position: 16px;
+    background-repeat: no-repeat;
+    margin: 18px 0;
+}
+
+.nav--menu {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.nav--menu-item {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav--menu-item.active {
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+.menu-icon {
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+.nav--menu-item-text {
+    flex-grow: 1;
+}
+
+.nav--global-playlists {
+    margin: 18px 0;
+
+}
+.nav--global-playlists-list {
+    margin-top: 16px;
+}
+.nav--playlists-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 16px;
+    letter-spacing: .125em;
+    margin-bottom: 8px 0;
+}
+
+.nav--global-playlist {
+    padding: 0 16px;
+    cursor: pointer;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.playlist-icon {
+    width: 32px;
+    padding: 12px;
+    background-color: white;
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.playlist-icon.text-black {
+    color: #000;
+}
+
+.playlist-icon.text-white {
+    color: #fff;
+    background: rgb(82,66,242);
+    background: linear-gradient(143deg, rgba(82,66,242,1) 0%, rgba(82,66,242,1) 42%, rgba(255,255,255,1) 100% )
+}
+
+.nav--global-playlist span {
+    flex-grow: 1;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav--user-playlists {
+    flex-grow: 1;
+    overflow: scroll;
+    height: 1px;
+}
+
+.nav--user-playlists-list {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav--user-playlist {
+    padding: 0 16px;
+    margin: 8px 0;
+    display: flex;
+}

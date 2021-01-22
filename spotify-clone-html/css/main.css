@@ -1,0 +1,67 @@
+@import './header.css';
+
+.main-container {
+    display: flex;
+    background-color: rgb(20,20,20);
+    flex-direction: column;
+}
+.main {
+    flex-grow: 1;
+    padding: 24px;
+}
+
+.main-user-playlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 16px 0;
+}
+
+.main-header h1 {
+    font-weight: 400;
+}
+
+.main-header span {
+    text-transform: uppercase;
+    letter-spacing: .125em;
+}
+
+.main-playlist-list {
+    display: flex;
+    justify-content: space-around;
+}
+.playlist {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30,30,30);
+    padding: 8px;
+}
+.playlist-image {
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    background-image: url('../assets/playlist-placeholder.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.playlist-info {
+    padding: 16px 0;
+}
+
+.playlist-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.playlist-author {
+    margin-top: 4px;
+    font-size: 16px;
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigator -->
+        <nav class="navigator">
+            <div class="nav-container">
+            <div class="spotify-logo"></div>
+            <!-- Nav Menu -->
+            <ul class="nav--menu">
+                <li class="nav--menu-item active">
+                    <i class="menu-icon fas fa-home"></i>
+                    <span class="nav--menu-item-text">Home</span>
+                </li>
+                <li class="nav--menu-item">
+                    <i class="menu-icon fas fa-search"></i>
+                    <span class="nav--menu-item-text">Search</span>
+                </li>
+                <li class="nav--menu-item">
+                    <i class="menu-icon">||\</i>
+                    <span class="nav--menu-item-text">La tua libreria</span>
+                </li>
+            </ul>
+            <!-- Playlists -->
+            <div class="nav--global-playlists">
+                <!-- Global Playlists -->
+                <span class="nav--playlists-title">PLAYLIST</span>
+                <ul class="nav--global-playlists-list">
+                    <li class="nav--global-playlist">
+                        <i class="fas fa-plus playlist-icon text-black"></i>
+                        <span>Crea playlist</span>
+                    </li>
+                    <li class="nav--global-playlist">
+                        <i class="fas fa-heart playlist-icon text-white"></i>
+                        <span>Crea playlist</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav--user-playlists">
+                <!-- User Playlists -->
+                <ul class="nav--user-playlists-list">
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                    <li class="nav--user-playlist">One Playlist</li>
+                    <li class="nav--user-playlist">Another One</li>
+                    <li class="nav--user-playlist">123 Playlist</li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <!-- Main Content -->
+        <div class="main-container">
+            <header>
+                <div class="header-left">
+                    <i class="fas fa-arrow-left header-icon"></i>
+                    <i class="fas fa-arrow-right header-icon"></i>
+                </div>
+                <div class="header-right">
+                    <div class="user-image"></div>
+                    <div class="user-full-name">Nicola Paoli</div>
+                    <i class="fas fa-arrow-down"></i>
+                    <div class="account-box">
+                        <div class="account-box-item">
+                            <span>Account</span>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="account-box-item">
+                            <span>Profilo</span>
+                        </div>
+                        <div class="account-box-divider"></div>
+                        <div class="account-box-item">
+                            <span>Esci</span>
+                        </div>
+                    </div>
+                    <script>
+                        document.querySelector('.header-right')
+                            .addEventListener('click', () => {
+                                document.querySelector('.account-box').classList.toggle('visible')
+                            })
+                    </script>
+                </div>
+            </header>
+            <div class="main">
+                <div class="main-user-playlist">
+                    <div class="main-header">
+                        <h1>Le tue playlist</h1>
+                        <span>Visualizza tutto</span>
+                    </div>
+                    <div class="main-playlist-list">
+                        <div class="playlist">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">One Playlist</div>
+                                <div class="playlist-author">Di Nicola Paoli</div>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Another One</div>
+                                <div class="playlist-author">Di Nicola Paoli</div>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">123 Playlist</div>
+                                <div class="playlist-author">Di Nicola Paoli</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-user-listen">
+                    <div class="main-header">
+                        <h1>Le playlist più ascoltate</h1>
+                        <span>Visualizza tutto</span>
+                    </div>
+                    <div class="main-playlist-list">
+                        <div class="playlist">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Top 2021</div>
+                                <div class="playlist-author">Di Spotify</div>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Pop</div>
+                                <div class="playlist-author">Di Spotify</div>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Rock</div>
+                                <div class="playlist-author">Di Spotify</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-user-listen">
+                    <div class="main-header">
+                        <h1>Rock</h1>
+                        <span>Visualizza tutto</span>
+                    </div>
+                    <div class="main-playlist-list">
+                        <div class="playlist">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Top Rock Global</div>
+                                <div class="playlist-author">Di Spotify</div>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Top Rock Europe</div>
+                                <div class="playlist-author">Di Spotify</div>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Top Rock Italy</div>
+                                <div class="playlist-author">Di Spotify</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bar -->
+    <div class="footer-bar">
+        <div class="playing-song">
+            <div class="playing-song-image"></div>
+            <div class="playing-song-info">
+                <div class="playing-song-title">This is a song</div>
+                <div class="playing-song-author">This is the author</div>
+            </div>
+            <div class="playing-song-fav">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        <div class="playing-controls">
+            <div class="controls">
+                <div class="control-shuffle">
+                    <i class="fas fa-random"></i>
+                </div>
+                <div class="control-back">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="control-play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="control-forward">
+                    <i class="fas fa-forward"></i>
+                </div>
+                <div class="control-repeat">
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+            </div>
+            <div class="progress-info">
+                <div class="start-number">0:23</div>
+                <div class="progress-bar">
+                    <div class="song-progress"></div>
+                </div>
+                <div class="end-number">3:53</div>
+            </div>
+        </div>
+        <div class="playing-right-controls">
+            <div class="control-queue">
+                <i class="fas fa-list-alt"></i>
+            </div>
+            <div class="control-devices">
+                <i class="fas fa-tablet-alt"></i>
+            </div>
+            <div class="control-sound">
+                <i class="fas fa-volume-down"></i>
+                <div class="volume-progress-bar">
+                    <div class="volume-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = () => {
+            let vh = window.innerHeight * 0.9;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        window.onresize = () => {
+            let vh = window.innerHeight;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+    </script>
+</body>
+</html>

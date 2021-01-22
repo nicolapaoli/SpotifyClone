@@ -1,0 +1,121 @@
+.footer-bar {
+    display: flex;
+    justify-content: space-between;
+}
+.playing-song {
+    min-width: 300px;
+    display: flex;
+}
+
+.playing-song-image {
+    width: 60px;
+    height: 60px;
+    margin: 15px 20px;
+    background-color: cornsilk;
+}
+
+.playing-song-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.playing-song-title {
+    font-weight: 600;
+}
+
+.playing-song-author {
+    color: rgb(200,200,200)
+}
+
+.playing-song-fav {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+.playing-controls {
+    flex-grow: 1;
+    display: flex;
+    max-width: 500px;
+    margin: 0 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #aaa;
+    margin: 0 50px;
+}
+
+.controls div {
+    margin:2px;
+}
+
+.control-play > *{
+    border: 1px solid #aaa;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.progress-info {
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #aaa;
+    font-size: 10px;
+}
+
+.progress-bar {
+    position: relative;
+    flex-grow: 1;
+    background-color: #333;
+    height: 5px;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+
+.song-progress {
+    position: absolute;
+    height: 5px;
+    width: 10%;
+    background-color: #aaa;
+    border-radius: 30px;
+}
+
+.playing-right-controls {
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #aaa;
+}
+.playing-right-controls > * {
+    margin: 5px;
+}
+
+.control-sound {
+    display: flex;
+    align-items: center;
+}
+
+.volume-progress-bar {
+    position: relative;
+    min-width: 100px;
+    background-color: #333;
+    height: 5px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.volume-progress {
+    position: absolute;
+    background-color: #aaa;
+    width: 50%;
+    height: 5px;
+    border-radius: 30px;
+}
